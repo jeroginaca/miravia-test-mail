@@ -1,371 +1,499 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">	
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="color-scheme" content="light dark">
-   <meta name="supported-color-schemes" content="light dark">
-	<title>Miravia</title>
+   <meta name="viewport" content="width=device-width" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+   <title>MIRAVIA</title>
    <style type="text/css">
-   	@import url('https://fonts.cdnfonts.com/css/avenir-next-cyr');
-      table {
-			border-spacing: 0;
-		}
+      body,
+      table,
+      td,
+      a {
+         -webkit-text-size-adjust: 100%;
+         -ms-text-size-adjust: 100%;
+      }
+      /* Prevent WebKit and Windows mobile changing default text sizes */
+
+      table,
       td {
-         padding: 0;
+         mso-table-lspace: 0pt;
+         mso-table-rspace: 0pt;
       }
-      p {
-         font-size: 15px;
+      /* Remove spacing between tables in Outlook 2007 and up */
+
+      img {
+         -ms-interpolation-mode: bicubic;
       }
+      /* Allow smoother rendering of resized image in Internet Explorer */
+      /* RESET STYLES */
+
       img {
          border: 0;
-      }
-      a {
+         line-height: 100%;
+         outline: none;
          text-decoration: none;
-         color: #e8fbfa;
-         font-size: 16px;
-      }
-      .content {
-         line-height: 20px;
-         font-size: 15px;
       }
 
-      @media screen and (max-width: 599.98px) {
-        
-         .two-columns .padding {
-            padding-right: 0!important;
-            padding-left: 0!important;
-         }
-        
+      table {
+         border-collapse: collapse !important;
       }
 
-      /* Dark Mode */
-      :root {
-         color-scheme: light dark;
-         supported-color-schemes: light dark;
+      body {
+         height: 100% !important;
+         margin: 0 !important;
+         padding: 0 !important;
+         width: 100% !important;
       }
-      @media (prefers-color-scheme: dark) {
-         body, center, table, .darkmode-bg {
-            background: #2d2d2d!important;
-            color: #ffffff!important;
+      /* iOS BLUE LINKS */
+
+      a[x-apple-data-detectors] {
+         color: inherit !important;
+         text-decoration: none !important;
+         font-size: inherit !important;
+         font-family: inherit !important;
+         font-weight: inherit !important;
+         line-height: inherit !important;
+      }
+
+      .mobile-button-content:hover {
+         background-color: #666666;
+      }
+
+      .mobile-button-content-white:hover {
+         background-color: #cccccc;
+      }
+
+      .mobile-button-content-red:hover {
+         background-color: #c00101;
+      }
+
+      .show-for-mobile {
+         display: none !important
+      }
+
+      /* MOBILE STYLES */
+
+      @media only screen and (max-width: 768px), screen and (max-device-width: 768px) {
+         .show-for-mobile {
+            max-height: none !important;
+            font-size: 18px !important;
+            display: block !important
          }
-         .darkmode-transparent {
-            background-color: transparent!important;
+      }
+
+      @media screen and (max-width: 525px) {
+         /*Table width*/
+         .pauto {width: auto!important}
+         .p100 { width: 100%!important; text-align: center!important; min-width: 30px!important; }
+         .p90 { width: 90%!important; text-align: center!important; min-width: 30px!important; }
+         .p80 { width: 80%!important; text-align: center!important; min-width: 30px!important; }
+         .p70 { width: 70%!important; text-align: center!important; min-width: 30px!important; }
+         .p50 {width: 50%!important;max-width: 300px!important;text-align: center!important;min-width: 100px!important;}
+         .p40 {width: 40%!important;max-width: 300px!important;text-align: center!important;min-width: 120px!important;}
+         /*Spacing*/
+         .top0 {padding-top: 0px!important;}
+         .top5 {padding-top: 5px!important;}
+         .top10 {padding-top: 10px!important;}
+         .top20 {padding-top: 20px!important;}
+         .top30 {padding-top: 30px!important;}
+         .top40 {padding-top: 40px!important;}
+         .top15 {padding-top: 15px!important;}
+         .right5 {padding-right: 5px !important;}
+         .lat0 {padding-left: 0!important;padding-right: 0!important}
+         .lat10 {padding-left: 10px!important;padding-right: 10px!important}
+         .bot0 {padding-bottom: 0px!important;}
+         .bot5 {padding-bottom: 5px!important;}
+         .bot10 {padding-bottom: 10px!important;}
+         .bot20 {padding-bottom: 20px!important;}
+         .bot30 {padding-bottom: 30px!important;}
+         .bot40 {padding-bottom: 40px!important;}
+         /*Font sizes*/
+         .font5 {font-size: 5px!important;line-height: 10px!important}
+         .font8 {font-size: 8px!important;line-height: 12px!important}
+         .font10 {font-size: 10px!important;line-height: 16px!important}
+         .font12 {font-size: 12px!important;line-height: 18px!important}
+         .font14 {font-size: 14px!important;line-height: 22px!important}
+         .font16 {font-size: 16px!important;line-height: 23px!important}
+         .font18 {font-size: 18px!important;line-height: 25px!important}
+         .font20 {font-size: 20px!important;line-height: 26px!important}
+         .font24 {font-size: 24px!important;line-height: 30px!important}
+         .font35 {font-size: 35px!important;line-height: 40px!important}
+         
+         .centermobile { text-align: center!important;}
+         .hiddenmobile { width: 0!important; height: 0!important; display: none!important;}
+         
+         /* ALLOWS FOR FLUID TABLES */
+         .wrapper {
+            width: 100% !important;
+            max-width: 100% !important;
+         }
+         /* ADJUSTS LAYOUT OF LOGO IMAGE */
+         .logo img {
+            margin: 0 auto !important;
+         }
+         /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+         .mobile-hide {
+            display: none !important;
+         }
+         .img-max {
+            max-width: 100% !important;
+            width: 100% !important;
+            height: auto !important;
+         }
+         /* FULL-WIDTH TABLES */
+         .responsive-table {
+            width: 100% !important;
+         }
+         /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+         .padding-meta {
+            padding: 30px 5% 0px 5% !important;
+            text-align: center;
+         }
+         .no-padding {
+            padding: 0 !important;
+         }
+         .section-padding {
+            padding: 50px 15px 50px 15px !important;
+         }
+         .center-on-mobile {
+            text-align: center !important;
+         }
+         .center-img-on-mobile{
+            margin: 0 auto;
+         }
+         .creando-mobile {
+            width: 134px !important;
+            height: 35px !important;
          }
       }
    </style>
-   
-	<!--[if (gte mso 9)|(IE)]>
-		<style type="text/css">
-			table {border-collapse: collapse !important;}
-		</style>
-	<![endif]-->
-	
+
+    <!-- Coding for DPI Scaling in Outlook 2007-2016 --><!--[if gte mso 9]><xml>
+  <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if mso]>
+  <style type="text/css">
+  /*Sans-Serif 4 Outlook with special font*/
+  body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+  td.serif, span.serif {font-family: 'Times New Roman', Times, serif !important;}
+  </style>
+<![endif]-->
+
 </head>
-<body style="Margin:0;padding: 0;min-width:100%;background-color:#dde0e1;">
 
-   <!--[if (gte mso 9)|(IE)]>
-      <style type="text/css">
-         body {background-color: #dde0e1!important;}
-         body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
-      </style>
-   <![endif]-->
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="-webkit-font-smoothing: antialiased;width:100% !important; -webkit-text-size-adjust:none;" bgcolor="#E9E9E9">
 
-   <center style="width: 100%;table-layout:fixed;background-color: #dde0e1;padding-bottom: 40px;">
-      <div style="max-width: 600px;background-color: #fafdfe;box-shadow: 0 0 10px rgba(0, 0, 0, .2);">
+  <!-- HIDDEN PREHEADER TEXT -->
+  <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">&nbsp;</div>
 
-         <!-- Preheader (remove comment) -->
-         <div style="font-size: 0px;color: #fafdfe;line-height: 1px;mso-line-height-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all;">
-            <!-- Add Preheader Text Here (85-100 characters in length) -->
-         </div>
-         <!-- End Preheader (remove comment) -->
-      
-         <!--[if (gte mso 9)|(IE)]>
-            <table width="600" align="center" style="border-spacing:0;color:#565656;" role="presentation">
-            <tr>
-            <td style="padding:0;">
-         <![endif]-->
+  <!-- el siguiente código es para separar la vista previa del cuerpo del email-->
+  <div style="display: none; max-height: 0px; overflow: hidden;">
+     &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+  </div>
 
-         <table align="center" style="border-spacing:0;color:#565656;font-family: 'Avenir Next Cyr', sans-serif, Arial, Helvetica;background-color: #fafdfe;Margin:0;padding:0;width: 100%;max-width: 600px;" role="presentation">
+  <!-- Container 100% 1 -->
+  <table cellspacing="0" cellpadding="0" border="0" align="center" style="width:100%;" bgcolor="#E9E9E9">
+     <tr>
+        <td align="center">
+
+           <!-- Container 100% 2 -->
+
+           <!--[if (gte mso 9)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" border="0"><tr><td><![endif]-->						
 
 
+              <!-- Cuerpo mail -->
+              <table bgcolor="#ffffff" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width:600px;">
 
 
-            <tr>
-               <td style="padding:0;">
-                  <table width="90%" style="margin: 0 auto" style="border-spacing:0;" role="presentation">
+                 <!-- Bloques de contenido -->
 
-                     <tr>
-                        <td class="darkmode-bg" style="padding: 2rem 0;">                       
-                           <a href="" target="_blank"><img src="https://i.ibb.co/4Vsc1TD/miravia-logo.png" alt="#"></a>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td height="2" style="background-color: #E0E0E0;"></td>
-                     </tr>
+                 <!-- HEADER -->
+                 <tr style="font-size: 0;">
+                    <td align="center" bgcolor="#FFFFFF">
+                       <table width="90%" border="0" cellspacing="0" cellpadding="0">
 
-                  </table>
-               </td>
-            </tr>
+                          <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
 
+                          <tr style="font-size: 0;">
+                             <td align="center" bgcolor="#FFFFFF">
+                                <table width="100%" border="0" cellspacing="0" cellpadding="0">
 
+                                   <tr style="font-size: 0;">
+                                      <td align="left" style="font-size: 0;">
+                                         <img src="img/logo-miravia.png" alt="MIRAVIA" style="display:block; border:none; font-size: 0;" width="115" />
+                                      </td>
+                                   </tr>
 
-            <tr>
-               <td style="padding:0;">
-                  <table width="90%" style="margin: 0 auto; border-spacing:0;color: #272833;" role="presentation">
+                                </table>
+                             </td>
+                          </tr>
 
-                     <tr>
-                        <td class="darkmode-bg" style="background-color: #fafdfe;padding-top: 20px; line-height: 1.3;">
-                           <h1>Un cliente ha iniciado una solicitud 
-                              de devolución o reembolso</h1>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="darkmode-bg" style="background-color: #fafdfe;padding-bottom: 20px;font-size: 1.1rem;line-height: 1.3; ">
-                           <span>Hola NOMBRE</span> <br>
-                           <span>
-                              Tienes un cliente que busca devolver alguno de tus productos. Para saber más sobre la devolución o el reembolso te invitamos a que sigas los siguientes pasos:</span>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="darkmode-bg" style="background-color: #fafdfe;padding-bottom: 20px;font-size: 1.1rem;line-height: 1.3; ">
-                           <ol>
-                              <li><span>Entra en el Centro de vendedores</span></li>
-                              <li><span>Accede al área de Gestión de pedidos</span></li>
-                              <li><span>Entra en Devoluciones</span></li>
-                           </ol>
-                        </td>
-                     </tr>
-                     <tr>
-								<td align="center" style="padding-top:0.5rem;">
-									<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width: 100%;border-spacing:0;">
-										<tr>
-											
-											<td align="center" bgcolor="#272833">
-												<a href="https://example.com" target="_blank" style="font-size: 18px;font-weight: bold;text-decoration: none;color: #ffffff;background-color: #272833;padding:1.2rem; display: inline-block; ">Ir al Centro de vendedores
-												</a>
-											</td>
+                          <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
 
-										</tr>
-									</table>
-								</td>
-							</tr>
-                     <tr>
-                        <td class="darkmode-bg" style="background-color: #fafdfe;padding: 2rem 0;font-size: 1rem;line-height: 1.3; ">
-                           <span>
-                              De todos modos, te recomendamos que te pongas en contacto con tu cliente para entender mejor el motivo de la devolución y así encontrar una solución que agrade a ambas partes.</span>
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
+                       </table>
+                    </td>
+                 </tr>
+                 <!-- end HEADER -->
 
+                 <!-- LINEA SEPARATORIA -->
+                 <tr>
+                    <td align="center" height="1" style="font-size: 0; line-height: 1%; mso-line-height-rule: exactly;">
+                       <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                          <tr><td height="1" style="font-size: 0; line-height: 1%; mso-line-height-rule: exactly;" bgcolor="#E0E0E0">&nbsp;</td></tr>
+                       </table>
+                    </td>
+                 </tr>
+                 <!-- end LINEA SEPARATORIA -->
 
+                 <!-- BLOQUE COPY + CTA -->
+                 <tr style="font-size: 0;">
+                    <td align="center" bgcolor="#FFFFFF">
+                       <table width="90%" border="0" cellspacing="0" cellpadding="0">
 
+                          <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
 
-         <tr>
-            <td style="padding:2rem 0; ;background-color: #F4F3FE;color: #272833;">
-               <table width="70%" style="margin: 0 auto;border-spacing:0;" role="presentation">
+                          <tr>
+                             <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:24px; line-height:28px; font-weight: bold;">Un cliente ha iniciado una solicitud de devolución o reembolso</td>
+                          </tr>
 
-                  <tr >
-                     <td align="center">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
-                           <tr style="background-color: white;color: #272833;">
-                              
-                              <td align="center" style="width:4.2rem;border-radius:50%;">
-                                 <h2 style="font-size: 2.5rem; font-weight: 800; line-height: 0;">?</h2>
-                              </td>
+                          <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
 
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
+                          <tr>
+                             <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px;">Hola NOMBRE<br /><br />
+                             Tienes un cliente que busca devolver alguno de tus productos. Para saber más sobre la devolución o el reembolso te invitamos a que sigas los siguientes pasos:</td>
+                          </tr>
 
-                  <tr>
-                     <td class="padded content" style="text-align: center;">
-                        <h2 style="font-weight: 600;">Si tienes dudas, este es tu tutorial</h2>
-                        <span>Aquí te dejamos este tutorial para ayudarte a entender mejor las Políticas de devoluciones.</span>
-                     </td>
-                  </tr>
-                  <tr>
-                     <td align="center" style="padding-top:3rem;">
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
+                          <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                          <tr style="font-size: 0;">
+                             <td align="center" bgcolor="#FFFFFF">
+                                <table width="90%" border="0" cellspacing="0" cellpadding="0">
+                                   <tr>
+                                      <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px;">
+                                         1. Entra en el Centro de vendedores<br />
+                                         2. Accede al área de Gestión de pedidos<br />
+                                         3. Entra en Devoluciones<br /></td>
+                                      </tr>										
+                                   </table>
+                                </td>
+                             </tr>
+
+                             <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="center" class="padding">
+                                   <table width="100%" border="0" cellspacing="0" cellpadding="0" class="mobile-button-container p100">
+                                      <tr>
+                                         <td align="center" class="mobile-button-content" bgcolor="#272833" width="100%" height="48"><a href="##LINK##?ema=ema-fecha-TAG-nombre" target="_blank" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; display: inline-block; min-width: 250px; width: 100%; line-height: 48px" class="mobile-button p100"><strong>Ir al Centro de vendedores</strong></a></td>
+                                      </tr>
+                                   </table>
+                                </td>
+                             </tr>
+
+                             <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px;">De todos modos, te recomendamos que te pongas en contacto con tu cliente para entender mejor el motivo de la devolución y así encontrar una solución que agrade a ambas partes.</td>
+                             </tr>
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                          </table>
+                       </td>
+                    </tr>
+                    <!-- end BLOQUE COPY + CTA -->
+
+                    <tr><td height="10" style="font-size: 1px; line-height: 1px;" bgcolor="#E9E9E9">&nbsp;</td></tr>
+
+                    <!-- BLOQUE INTERROGANTE -->
+                    <tr style="font-size: 0;">
+                       <td align="center" bgcolor="#F4F3FE">
+                          <table width="90%" border="0" cellspacing="0" cellpadding="0">
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr style="font-size: 0;">
+                                <td align="center" style="font-size: 0;">
+                                   <img src="img/ico-interrogante.png" alt="MIRAVIA" style="display:block; border:none; font-size: 0;" width="50" height="50" />
+                                </td>
+                             </tr>
+
+                             <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="center" style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:#121212; font-size:24px; line-height:28px; font-weight: bold;">Si tienes dudas, este es tu tutorial</td>
+                             </tr>
+
+                             <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="center" style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:#121212; font-size:16px; line-height:18px;">Aquí te dejamos este tutorial para ayudarte a entender mejor las Políticas de devoluciones.</td>
+                             </tr>
+
+                             <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="center" class="padding">
+                                   <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                      <tr>
+                                         <td align="center" class="mobile-button-content" bgcolor="#272833" width="250" height="48"><a href="##LINK##?ema=ema-fecha-TAG-nombre" target="_blank" style="font-size: 14px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; display: inline-block; min-width: 250px; width: 100%; line-height: 48px" class="mobile-button"><strong>Ver tutorial</strong></a></td>
+                                      </tr>
+                                   </table>
+                                </td>
+                             </tr>
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                          </table>
+                       </td>
+                    </tr>
+                    <!-- end BLOQUE INTERROGANTE -->
+
+                    <tr><td height="10" style="font-size: 1px; line-height: 1px;" bgcolor="#E9E9E9">&nbsp;</td></tr>
+
+                    <!-- BLOQUE AYUDA -->
+                    <tr style="font-size: 0;">
+                       <td align="center" bgcolor="#FFFFFF">
+                          <table width="90%" border="0" cellspacing="0" cellpadding="0">
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:18px; line-height:22px; font-weight: bold;">¿Necesitas ayuda?</td>
+                             </tr>
+
+                             <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                             <tr style="font-size: 0;">
+                                <td align="center" bgcolor="#FFFFFF">
+                                   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                                      <tr>
+                                         <td align="left" width="50%">															
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                               <tr style="font-size: 0;">
+                                                  <td width="30" align="center" style="font-size: 0;">
+                                                     <img src="img/ico-academia.png" alt="Academia" style="display:block; border:none; font-size: 0;" width="20" height="20" />
+                                                  </td>
+                                                  <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px; text-decoration: underline;"><a href="#" target="_blank" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px; text-decoration: underline;">Academia</a></td>
+                                               </tr>
+                                            </table>
+                                         </td>
+                                         <td align="left" width="50%">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                               <tr style="font-size: 0;">
+                                                  <td width="30" align="center" style="font-size: 0;">
+                                                     <img src="img/ico-chat.png" alt="Academia" style="display:block; border:none; font-size: 0;" width="24" height="24" />
+                                                  </td>
+                                                  <td align="left" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px; text-decoration: underline;"><a href="#" target="_blank" style="font-family:Arial, Helvetica, sans-serif; text-align:left; color:#121212; font-size:16px; line-height:18px; text-decoration: underline;">Chat de soporte</a></td>
+                                               </tr>
+                                            </table>
+                                         </td>
+                                      </tr>
+
+                                   </table>
+                                </td>
+                             </tr>
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                          </table>
+                       </td>
+                    </tr>
+                    <!-- end BLOQUE AYUDA -->
+
+                    <tr><td height="10" style="font-size: 1px; line-height: 1px;" bgcolor="#E9E9E9">&nbsp;</td></tr>
+
+                    <!-- FOOTER -->
+                    <tr style="font-size: 0;">
+                       <td align="center" bgcolor="#6B5FF2">
+                          <table width="90%" border="0" cellspacing="0" cellpadding="0">
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="center" style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:#ffffff; font-size:16px; line-height:18px;">Follow Miravia on social media</td>
+                             </tr>
+
+                             <tr><td height="20" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr style="font-size: 0;">
+                               <td align="center">
+                                 <table width="200" border="0" cellspacing="0" cellpadding="0">
+
+                                    <tr style="font-size: 0;">
+                                      <td align="center" style="font-size: 0;"><a href="#" target="_blank"><img src="img/ico-fb.png" alt="FACEBOOK" style="display:block; border:none; font-size: 0;" width="40" height="40" /></a>
+                                      </td>
+
+                                      <td width="30" align="center" style="font-size: 0;">&nbsp; </td>
+
+                                      <td align="center" style="font-size: 0;"><a href="#" target="_blank"><img src="img/ico-insta.png" alt="INSTAGRAM" style="display:block; border:none; font-size: 0;" width="40" height="40" /></a>
+                                      </td>
+
+                                      <td width="30" align="center" style="font-size: 0;">&nbsp; </td>
+
+                                      <td align="center" style="font-size: 0;"><a href="#" target="_blank"><img src="img/ico-tt.png" alt="TIKTOK" style="display:block; border:none; font-size: 0;" width="40" height="40" /></a>
+                                      </td>
+                                    </tr>
+                             
+                                 </table>
+                               </td>
+                             </tr>
+
+                             <tr><td height="50" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                               <td align="center" class="padding">
+                                <table border="0" cellspacing="0" cellpadding="0" class="mobile-button-container">
+                                 <tr>
+                                   <td align="center" class="mobile-button-content-white" bgcolor="#FFFFFF" width="250" height="48"><a href="##LINK##?ema=ema-fecha-TAG-nombre" target="_blank" style="font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #272833; text-decoration: none; display: inline-block; min-width: 250px; width: 100%; line-height: 48px" class="mobile-button"><strong>Download the App</strong></a></td>
+                                 </tr>
+                                </table>
+                               </td>
+                             </tr>
+
+                             <tr><td height="50" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                             <tr>
+                                <td align="center" style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:#ffffff; font-size:10px; line-height:18px;"><a href="#" target="_blank" style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:#ffffff; font-size:10px; line-height:18px;">Terms and conditions of Arise</a></td>
+                             </tr>
+
+                             <tr><td height="40" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
+                          </table>
+                       </td>
+                    </tr>
+                    <!-- end FOOTER -->
+
+                    <tr style="font-size: 0;">
+                      <td align="center" bgcolor="#FFFFFF">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+                           <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+
                            <tr>
-                              
-                              <td align="center" style="border-radius:4px;" bgcolor="#26292B">
-                                 <a href="https://example.com" target="_blank" style="font-size: 15px;font-weight: bold;text-decoration: none;color: #ffffff;background-color: #272833;border:1px solid #ffffff;border-radius:4px;padding:0.8rem 5rem;display: inline-block;">Ver tutorial
-                                 </a>
-                              </td>
-
+                              <td align="center" style="font-family:Arial, Helvetica, sans-serif; text-align:center; color:#121212; font-size:10px; line-height:14px;">This is an automatic email. Do not reply to this email.</td>
                            </tr>
+
+                           <tr><td height="30" style="font-size: 1px; line-height: 1px;">&nbsp;</td></tr>
+                    
                         </table>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
+                      </td>
+                    </tr>
 
 
-
-
-            <tr>
-               <td style="padding:0 0 2rem 0;">
-                  <table width="90%" style="margin: 0 auto; border-spacing:0;color: #272833;" role="presentation">
-                     <tr>
-                        <td style="padding:10px 10px 20px 10px;">
-                           <h3>¿Necesitas ayuda?</h3>
-                        </td>
-                     </tr>
-                     <tr>
-                        <td class="two-columns" style="padding:0;font-size:0;">
-
-                           <!--[if (gte mso 9)|(IE)]>
-                              <table width="100%" style="border-spacing:0;" role="presentation">
-                              <tr>
-                              <td width="300" valign="top" style="padding: 0;">
-                           <![endif]-->
-
-                           <table class="column" style="border-spacing:0;vertical-align:top;width:100%;max-width:200px;display:inline-block;" role="presentation">
-                              <tr>
-                                 <td class="padding">
-
-                                    <table class="content" style="border-spacing:0;" role="presentation">
-                                       <tr>
-                                          <td align="left" style="padding-left:1rem;">
-                                             <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
-                                                <img src=" https://i.ibb.co/dsv9fpq/general-icns.png" /> 
-                                                <tr>                                               
-                                                   <td align="left" >
-                                                      <a href="https://example.com" target="_blank" style="font-size: 16px;font-weight: 300;  text-decoration: underline;color: #272833;">
-                                                        <span>
-                                                           Academia
-                                                        </span>
-                                                      </a>
-                                                   </td>
-
-                                                </tr>
-                                             </table>
-                                          </td>
-                                       </tr>
-                                    </table>
-
-                                 </td>
-                              </tr>
-                           </table>
-
-                           <!--[if (gte mso 9)|(IE)]>
-                           </td><td width="300" valign="top" style="padding: 0;">
-                           <![endif]-->
-
-                           <table class="column" style="border-spacing:0;vertical-align:top;width:100%;max-width:200px;display:inline-block;" role="presentation">
-                              <tr>
-                                 <td class="padding">
-
-                                    <table class="content" style="border-spacing:0;" role="presentation">
-                                       <tr>
-                                          <td align="left" style="padding-left:1rem;">
-                                             <table align="left" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
-                                                <img src="https://i.ibb.co/5TxwNJR/general-icns-1.png" /> 
-                                                <tr>                                               
-                                                   <td align="left" >
-                                                      <a href="https://example.com" target="_blank" style="font-size: 16px;font-weight: 300;  text-decoration: underline;color: #272833;">
-                                                        <span>
-                                                         Chat de soporte
-                                                        </span>
-                                                      </a>
-                                                   </td>
-
-                                                </tr>
-                                             </table>
-                                          </td>
-                                       </tr>
-                                    </table>
-
-                                 </td>
-                              </tr>
-                           </table>
-                           
-
-                           <!--[if (gte mso 9)|(IE)]>
-                              </td>
-                              </tr>
-                              </table>
-                           <![endif]-->
-
-                        </td>
-                     </tr>
-                  </table>
-               </td>
-            </tr>
-
-
-      <tr>
-         <td style="background-color:#6B5FF2; padding: 2rem 0; text-align: center; color: white;">
-            <table width="100%" style="border-spacing:0;" role="presentation">
-
-               <span style="font-size: 22px;">Follow Miravia on social media</span>
-
-               <tr>
-                  <td class="padding content" style="padding: 2rem 0 ;width:100%;text-align:center; width:600px;">
-                     <a style="padding: 1rem;" href="https://www.example.com"><img src="https://i.ibb.co/chfkfCr/sm-icns.png" alt="facebook"  style="border-width:0;padding-right:1px;"></a>
-                     <a style="padding: 1rem;" href="https://www.example.com"><img src="https://i.ibb.co/1qgYDRW/sm-icns-1.png" alt="twitter"  style="border-width:0;padding-right:1px;"></a>
-                     <a style="padding: 1rem;" href="https://www.example.com"><img src="https://i.ibb.co/s6Zwg08/sm-icns-2.png" alt="youtube"  style="border-width:0;padding-right:1px;"></a>
-                     
-                  </td>
-               </tr>
-
-               <tr>
-                  <td align="center" style="padding:1rem 0 3rem 0;">
-                     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="border-spacing:0;">
-                        <tr>
-                           
-                           <td align="center" style="border-radius:4px;" bgcolor="#26292B">
-                              <a href="https://example.com" target="_blank" style="text-decoration: none;background-color: #ffffff;color: #272833;padding:0.8rem 1.2rem;display: inline-block;">Download the App
-                              </a>
-                           </td>
-
-                        </tr>
-                     </table>
-                  </td>
-               </tr>
-
-               <tr>
-                  <td>
-                     <a href="https://example.com" target="_blank" style="font-size: 12px;font-weight: 300;  text-decoration: underline;">     
-                        Terms and conditions of Arise
-
-                     </a>
-                  </td>
-               </tr>
-
-            </table>
-         </td>
-      </tr>
-
-      <tr>
-         <td style="padding:0;">
-            <table width="90%" style="margin: 0 auto; border-spacing:0;color: #272833; text-align: center;" role="presentation">
-
-               <tr>
-                  <td class="darkmode-bg" style="background-color: #fafdfe;padding:1.8rem; line-height: 1.3;">
-                     <span style="font-size:10px;">This is an automatic email. Do not reply to this email.</span>
-                  </td>
-               </tr>
-
-
-
-
-         </table>
-
-         <!--[if (gte mso 9)|(IE)]>
-         </td>
-         </tr>
-         </table>
-         <![endif]-->
-      
-      </div>
-   </center>
+                 </table>
+          <!--[if (gte mso 9)|(IE)]>
+        </td></tr></table>
+    <![endif]-->
+       <!-- end Container email -->
+    </td>
+</tr>
+</table>
+<!-- end Container 100% -->
 
 </body>
+
 </html>
